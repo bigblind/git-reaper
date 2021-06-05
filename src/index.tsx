@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { IdentityContextProvider, useIdentityContext } from 'react-netlify-identity';
+import { IdentityContextProvider } from 'react-netlify-identity';
 import 'semantic-ui-css/semantic.min.css'
 
 

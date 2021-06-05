@@ -1,5 +1,5 @@
-import { Button, Icon } from 'semantic-ui-react'
-import { IdentityContextProvider, useIdentityContext } from 'react-netlify-identity';
+import { Button } from 'semantic-ui-react'
+import { useIdentityContext } from 'react-netlify-identity';
 
 function LoginButton() {
   const identityContext = useIdentityContext();
