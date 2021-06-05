@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { IdentityContextProvider, useIdentityContext } from 'react-netlify-identity';
+import 'semantic-ui-css/semantic.min.css'
+
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <IdentityContextProvider url="https://git-reaper.frederikcreemers.be">
     <App />
+    </IdentityContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

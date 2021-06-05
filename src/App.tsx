@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header,  Segment, Grid, Divider } from 'semantic-ui-react'
+
+import LoginButton from "./components/LoginButton"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header>Git Reaper</Header>
+      <Segment>
+        <Grid columns={2}>
+          <Divider vertical />
+          <Grid.Row>
+            <Grid.Column>
+              <p>
+                If you're anything like me, your GitHub account is filled with unfinished projects, old school projects, and other code that's just collecting dust.
+                <strong>It's time for all of this cruft to go!</strong>
+              </p>
+            </Grid.Column>
+            <Grid.Column>
+              <LoginButton />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Segment>
+    </>
   );
 }
 
